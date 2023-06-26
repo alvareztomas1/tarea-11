@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  
+</head>
+<body>
+  <form id="formulario">
+
+    <div id="salarios">
+
+      <div class="salario">
+        <label for="formGroupExampleInput" class="form-label">Ingrese los salarios anuales debajo:</label>
+        <input type="number" class="form-control" placeholder="Ingrese salario" name="salario">
+      </div>
+  
+    </div>
+   
+
+    <button id="boton-agregar" type="button" class="btn btn-primary">Agregar</button>
+    <button id="boton-calcular" type="button" class="btn btn-info">Calcular</button>
+    <button id="boton-borrar" type="button" class="btn btn-primary">Borrar</button>
+    <p></p>
+
+    <div id="resultados" class="oculto">
+      <p>El mayor salario es: <strong id="mayor-salario"></strong></p>
+      <p>El menor salario es: <strong id="menor-salario"></strong></p>
+      <p>El promedio del salario mensual es: <strong id="mensual-salario"></strong></p>
+      <p>El promedio del salario anual <strong id="anual-salario"></strong></p>
+    </div>
+
+
+  </form>
+  
+</body>
+
+
+<script src='src/main.js'></script>
+
+<script src='validaciones.js'></script>
+<script src='pruebas.js'></script>
+<script src='calculos.js'></script>
+</html>

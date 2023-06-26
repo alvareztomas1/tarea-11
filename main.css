@@ -1,0 +1,10 @@
+#formulario{
+    background-color: rgb(198, 222, 230);
+    width: 60%;
+}
+.oculto{
+    display: none;
+}
+.error{
+    border: solid 2px red;
+}
